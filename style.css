@@ -204,3 +204,24 @@ a{
         width: 350px;
     }
 }
+
+@media (max-width: 512px){
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+   .banner-content .greet{
+       font-size: 2rem;
+   }
+
+   .banner-image{
+       margin: 0 auto;
+   }
+
+   .banner-image img{
+       width: 300px;
+   }
+}
