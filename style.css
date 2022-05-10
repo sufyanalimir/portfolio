@@ -131,7 +131,7 @@ a{
     .mobile-nav-toggle{
         display: block;
         position: absolute;
-        background: url(/img/menu.svg);
+        background: url(img/menu.svg);
         background-repeat: no-repeat;
         z-index: 9999;
         width: 2rem;
@@ -141,7 +141,7 @@ a{
         border: 0;
     }
     .mobile-nav-toggle[aria-expanded = "true"]{
-        background: url(/img/close.svg);
+        background: url(img/close.svg);
     }
 }
 
