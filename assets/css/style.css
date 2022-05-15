@@ -45,6 +45,11 @@ a:hover{
     color: var(--primary-color);
 }
 
+.container{
+    max-width: 1150px;
+    margin: auto auto;
+}
+
 .header{
     height: 5rem;
     position: fixed;
@@ -212,7 +217,7 @@ a:hover{
     text-justify: distribute;
     font-size: 1.2rem;
     line-height: 1.5em;
-    letter-spacing: 0.18rem;
+    letter-spacing: 0.1rem;
 }
 
 .portfolio{
@@ -228,7 +233,7 @@ a:hover{
 
 .portfolio-card{
     width: 20em;
-    height: 27.5em;
+    height: 28.5em;
     margin: 1.5em;
     /* border: 1px solid var(--background); */
     border-radius: 5px;
@@ -256,7 +261,8 @@ a:hover{
     padding-top: 0;
     text-align: justify;
     text-justify: distribute-all-lines;
-    height: 4.8em;
+    letter-spacing: .1em;
+    height: 6em;
 }
 
 .portfolio-card .btn-container{
@@ -296,23 +302,23 @@ a:hover{
 
 .contact h2{
     font-family: 'Water Brush', cursive;
-    font-size: 5rem;
+    color: var(--on-background);
+    font-size: 4rem;
     padding: .2em 0;
 }
 
-.contact ul{
-    max-width: 1150px;
-    margin: auto auto;
+.contact .contact-details{
     padding-top: 1.2em;
     display: flex;
     justify-content: space-around;
 }
 
-.contact ul li p{
+.contact .contact-details p{
     font-size: 1.3em;
+    padding: .5em;
 }
 
-.contact ul li i{
+.contact .contact-details i{
     margin: 0 0.5em;
 }
 
@@ -325,17 +331,17 @@ a:hover{
 
 .contact .social-links img{
     width: 1.5em;
-    margin: 0 3em;
-    filter: grayscale(100%);
+    margin: 0 2.5em;
+    transition: all 300ms ease-in;
 }
 
 .contact .social-links img:hover{
-    filter: grayscale(0);
+    transform: scale(1.3);
 }
 
 /* Media Queries for responsiveness */
 
-@media (max-width: 992px){
+@media only screen and (max-width: 992px){
     .banner-content .greet{
         font-size: 3rem;
     }
@@ -345,7 +351,7 @@ a:hover{
 }
 
 
-@media (max-width: 768px){
+@media only screen and (max-width: 768px){
     .navbar{
         position: fixed;
         inset: 0 0 0 50%;
@@ -400,20 +406,28 @@ a:hover{
         background: url(../images/nav-icons/close.svg);
     }
 
-    .contact-details{
+    .banner{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column-reverse;
         justify-content: center;
+        align-items: center;
+        margin: 3em 0;
     }
 
-    .contact ul li p{
+    .contact .contact-details{
+        justify-content: left;
+        flex-wrap: wrap;
+        
+    }
+
+    .contact .contact-details p{
         font-size: 1em;
         margin: 0.8em 0;
     }
 }
 
 
-@media (max-width: 512px){
+@media only screen and (max-width: 512px){
     .banner{
         display: flex;
         flex-direction: column-reverse;
