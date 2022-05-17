@@ -211,7 +211,7 @@ a:hover{
 
 .about-container .about-para{
     color: var(--on-background);
-    max-width: 1150px;
+    max-width: 1050px;
     margin: 2rem;
     text-align: justify;
     text-justify: distribute;
